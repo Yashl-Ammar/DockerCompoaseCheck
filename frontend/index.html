@@ -13,7 +13,7 @@
       e.preventDefault();
       const formData = new FormData(e.target);
       const data = Object.fromEntries(formData.entries());
-      await fetch('http://192.168.18.149:5000/store', {
+      await fetch('http://localhost:5000/store', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(data)
